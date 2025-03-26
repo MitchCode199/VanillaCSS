@@ -1,0 +1,68 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 3px 1rem;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.signup{
+    padding: 5px 8px;
+    background-color: rgb(100, 203, 255);
+    border-radius: 1rem;
+    border: 1px solid gray;
+    color: white;
+}
+.hero-button{
+    display: flex;
+    gap: 1rem;
+}
+
+button{
+    background: transparent;
+    padding: 5px 8px;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.hero{
+    margin: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+}
+
+svg{
+    width: 15rem;
+    height: auto;
+}
+
+.content{
+    background-color: rgb(100, 203, 255);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 3rem;
+}
+
+.box{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
