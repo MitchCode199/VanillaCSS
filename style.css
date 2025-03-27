@@ -58,6 +58,8 @@ h5{
 
 .offer-section-left{
     display: flex;
+    max-width: 615px;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
