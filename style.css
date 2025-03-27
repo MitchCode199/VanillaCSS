@@ -4,7 +4,7 @@
     margin-left: 48px;
 }
 .detail-box{
-    max-width: 15rem;
+    max-width: clamp(400px, 60%, 500px)
 }
 
 h1{
@@ -51,9 +51,12 @@ h5{
 }
 
 .offer-section{
+    border: 3px solid green;
     display: flex;
     flex-wrap: wrap;
+    gap:20px;
     justify-content: center;
+    padding: 20px 0px;
 }
 
 .offer-section-left{
@@ -64,7 +67,6 @@ h5{
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
-    margin: 45px;
     background-color: rgb(44, 44, 44);
     color: white;
     border-radius: 4px;
@@ -339,12 +341,17 @@ input{
     .detail-box-main {
         margin-left: 20px;
     }
-    @media (max-width: 768px) {
-        .offer-section-left {
-            flex-direction: column;
-            margin: 10px;
-            padding: 1.5rem;
-            gap: 1rem;
-        }
+    .detail-box{
+        max-width: 15rem;
+    }
+    .offer-section{
+        gap: 0px;
+    }
+    .offer-section-left {
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 10px;
+        padding: 1.5rem;
     }
 }
+
