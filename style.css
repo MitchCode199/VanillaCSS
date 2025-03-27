@@ -293,6 +293,7 @@ input{
 }
 .foot-items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -341,6 +342,7 @@ input{
     }
     @media (max-width: 768px) {
         .offer-section-left {
+            max-width: 800px ;
             flex-direction: column;
             margin: 10px;
             padding: 1rem;
