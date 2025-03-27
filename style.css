@@ -1,7 +1,7 @@
 .detail-box-main{
     max-width: 25rem;
     color: white;
-    margin-left: 3rem;
+    margin-left: 48px;
 }
 .detail-box{
     max-width: 15rem;
@@ -312,7 +312,7 @@ input{
         display: none !important;
     }
     .detail-box-main {
-        margin-left: 5px !important;
+        margin-left: 15px !important;
     }
     .hero-section {
         height: 200px !important;
