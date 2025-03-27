@@ -42,11 +42,18 @@ h5{
 .hero-section{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     height: 700px;
     background-image: url(https://themewagon.github.io/feane/images/hero-bg.jpg);
     background-size: cover;
 }
+@media screen and (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        background-size: cover;  /* Reduce image size on smaller screens */
+        background-position: center;
+    }
+}
+
 
 
 .offer-section{
@@ -57,6 +64,7 @@ h5{
 
 .offer-section-left{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 1.5rem;
     margin: 45px;
@@ -111,7 +119,17 @@ h5{
 .menu-section{
     display: flex;
     justify-content: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items-select{
+    border: 3px solid black;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 50px;
 }
 
 .food{
@@ -138,8 +156,7 @@ h5{
     margin: 10px;
 }
 
-.menu-filter{
-    max-width: fit-content;
+/*.menu-filter{
     padding: 1rem;
     margin: 20px;
     display: grid;
@@ -153,6 +170,20 @@ h5{
     'item7 item8 item9'
     ;
 }
+@media screen (max-width: 425px) {
+    .menu-filter{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(5, 400px);
+        grid-template-areas:
+        'item1 item2'
+        'item3 item4'
+        'item5 item6'
+        'item7 item8'
+        'item 9 item9'
+        ;
+    }
+}*/
 
 .item1{
     grid-area: item1;
@@ -185,6 +216,11 @@ h5{
 .about-section img{
     width: 400px;
     height: 600px;
+}
+@media screen and (max-width:425px) {
+    .about-section img{
+        display: none !important;
+    }
 }
 
 .about-section{
@@ -248,3 +284,37 @@ input{
     border: none;
     cursor: pointer;
 }
+
+.foot-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+.foot-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px dashed red;
+}
+.foot-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px dotted yellow;
+}
+.foot-branch{
+    border: 2px solid purple;
+    text-align: center;
+    max-width: 350px;
+    margin-bottom: 15px;
+}
+.foot-copyright{
+    margin: 2rem;
+    border: 2px solid green;
+}
+
