@@ -348,7 +348,7 @@ input{
         gap: 0px;
     }
     .offer-section-left {
-        justify-content: space-evenly;
+        max-width: 350px;
         flex-direction: column;
         margin: 10px;
         padding: 1.5rem;
