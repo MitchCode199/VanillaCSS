@@ -40,48 +40,6 @@ h5{
 }
 
 .hero-section{
-.detail-box-main{
-    max-width: 25rem;
-    color: white;
-    margin-left: 3rem;
-}
-.detail-box{
-    max-width: 15rem;
-}
-
-h1{
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-h2{
-    font-size: 2rem;
-}
-h5{
-    margin-bottom: 5px;
-    font-size: 1rem;
-    color: rgb(21, 21, 21); 
-}
-
-.detail-box-info{
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.btn-box{
-    display: inline-block;
-    background-color: orange;
-    padding: 0.3rem 1rem;
-    border-radius: 20px;
-}
-
-.btn-box a{
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-}
-
-.hero-section{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -90,15 +48,6 @@ h5{
     background-size: cover;
 }
 
-.offer-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: flex-start;
-    height: 700px;
-    background-image: url(https://themewagon.github.io/feane/images/hero-bg.jpg);
-    background-size: cover;
-}
 
 .offer-section{
     display: flex;
@@ -106,7 +55,6 @@ h5{
     justify-content: center;
 }
 
-.offer-section-left{
 .offer-section-left{
     display: flex;
     align-items: center;
@@ -142,14 +90,6 @@ h5{
     gap: 2rem;
 }
 
-.offer-img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid orange;
-}
-
 .menu-img{
     width: 120px;
     height: 120px;
@@ -166,22 +106,14 @@ h5{
     border-top-right-radius: 10px;
     background-color: rgb(44, 44, 44);
     box-shadow: inset 1px 5px 10px rgba(0, 0, 0, 0.419);
-    justify-content: center;align-items: center;
-    border-bottom-left-radius: 20%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: rgb(44, 44, 44);
-    box-shadow: inset 1px 5px 10px rgba(0, 0, 0, 0.419);
 }
 
-.menu-section{
 .menu-section{
     display: flex;
     justify-content: center;
     justify-content: center;
 }
 
-.food{
 .food{
     display: flex;
     flex-direction: column;
@@ -198,27 +130,12 @@ h5{
 .food-detail{
     margin: 10px;
 }
-.food-detail-content{
-    
-}
 
-.menu-filter{
-    max-width: fit-content;
-    background-color: rgb(250, 250, 250);
-    width: 250px;
-    border-radius: 10px;
-}
 .price{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-}
-.food-detail{
-    margin: 10px;
-}
-.food-detail-content{
-    
 }
 
 .menu-filter{
