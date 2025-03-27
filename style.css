@@ -24,6 +24,7 @@ h5{
     max-width: clamp(800px, 60%, 400px);
     margin-bottom: 1rem;
     font-size: clamp(14px, 2vw, 16px);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 
