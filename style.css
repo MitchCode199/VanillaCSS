@@ -9,7 +9,7 @@
 
 h1{
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: clamp(24px, 5vw, 50px);
 }
 h2{
     font-size: 2rem;
@@ -21,9 +21,11 @@ h5{
 }
 
 .detail-box-info{
+    max-width: clamp(800px, 60%, 400px);
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: clamp(10px, 2vw, 15px);
 }
+
 
 .btn-box{
     display: inline-block;
@@ -46,15 +48,6 @@ h5{
     background-image: url(https://themewagon.github.io/feane/images/hero-bg.jpg);
     background-size: cover;
 }
-@media screen and (max-width: 768px) {
-    .hero-section {
-        height: auto;
-        background-size: cover;  /* Reduce image size on smaller screens */
-        background-position: center;
-    }
-}
-
-
 
 .offer-section{
     display: flex;
@@ -217,11 +210,7 @@ h5{
     width: 400px;
     height: 600px;
 }
-@media screen and (max-width:425px) {
-    .about-section img{
-        display: none !important;
-    }
-}
+
 
 .about-section{
     background-color: rgb(44, 44, 44);
@@ -318,3 +307,33 @@ input{
     border: 2px solid green;
 }
 
+@media screen and (max-width:425px) {
+    .about-section img{
+        display: none !important;
+    }
+    .detail-box-main {
+        margin-left: 5px !important;
+    }
+    .hero-section {
+        height: 200px !important;
+        background-size: cover;  /* Reduce image size on smaller screens */
+        background-position: center;  
+    }
+    /*.btn-box{
+        display: inline-block;
+        background-color: orange;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }*/
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+        background-size: cover;  /* Reduce image size on smaller screens */
+        background-position: center;    
+    }
+    .detail-box-main {
+        margin-left: 20px;
+    }
+}
