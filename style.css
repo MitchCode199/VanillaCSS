@@ -9,7 +9,7 @@
 
 h1{
     margin-bottom: 1rem;
-    font-size: clamp(24px, 5vw, 50px);
+    font-size: clamp(50px, 5vw, 80px);
 }
 h2{
     font-size: 2rem;
@@ -23,7 +23,7 @@ h5{
 .detail-box-info{
     max-width: clamp(800px, 60%, 400px);
     margin-bottom: 1rem;
-    font-size: clamp(12px, 2vw, 15px);
+    font-size: clamp(14px, 2vw, 16px);
 }
 
 
