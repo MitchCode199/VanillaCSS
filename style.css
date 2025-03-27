@@ -9,7 +9,7 @@
 
 h1{
     margin-bottom: 1rem;
-    font-size: clamp(50px, 5vw, 80px);
+    font-size: clamp(45px, 5vw, 90px);
 }
 h2{
     font-size: 2rem;
@@ -59,7 +59,7 @@ h5{
     padding: 20px 0px;
 }
 
-.offer-section-left{
+.offer-section-left{ border: 3px solid red;
     display: flex;
     max-width: 615px;
     flex-grow: 1;
@@ -113,6 +113,7 @@ h5{
 }
 
 .menu-section{
+    border: 4px dashed blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -132,9 +133,9 @@ h5{
     display: flex;
     flex-direction: column;
     background-color: rgb(250, 250, 250);
-    width: 250px;
     border-radius: 10px;
 }
+
 .price{
     display: flex;
     justify-content: space-between;
@@ -152,11 +153,11 @@ h5{
     margin: 10px;
 }
 
-/*.menu-filter{
-    padding: 1rem;
-    margin: 20px;
+.menu-filter{
+    border: 4px solid orange;
     display: grid;
     justify-content: space-evenly;
+    padding: 10px;
     gap: 1rem;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -166,20 +167,12 @@ h5{
     'item7 item8 item9'
     ;
 }
-@media screen (max-width: 425px) {
-    .menu-filter{
-        display: grid;
-        grid-template-columns: repeat(2, 200px);
-        grid-template-rows: repeat(5, 400px);
-        grid-template-areas:
-        'item1 item2'
-        'item3 item4'
-        'item5 item6'
-        'item7 item8'
-        'item 9 item9'
-        ;
-    }
-}*/
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+}
+
 
 .item1{
     grid-area: item1;
@@ -297,7 +290,7 @@ input{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1rem;
     border: 2px dotted yellow;
 }
 .foot-branch{
@@ -322,6 +315,22 @@ input{
         height: 500px !important;
         background-size: cover;  /* Reduce image size on smaller screens */
         background-position: center;  
+    }
+    .menu-filter{
+        min-width: 230px; 
+        display: grid;
+        gap: 0.5rem;
+        padding: 4px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        grid-template-areas:
+        'item1'
+        'item2'
+        'item3'
+        !important;
+    }
+    .item4, .item5, .item6{
+        display: none;
     }
    
     /*.btn-box{
@@ -352,6 +361,22 @@ input{
         flex-direction: column;
         margin: 10px;
         padding: 1.5rem;
+    }
+    .menu-filter{
+        max-width: 500px;
+        display: grid;
+        gap: 0.5rem;
+        padding: 4px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        'item1 item2' 
+        'item3 item4' 
+        'item5 item6'
+        ;
+    }
+    .item7, .item8, .item9{
+        display:none
     }
 }
 
