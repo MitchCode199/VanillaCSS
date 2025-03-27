@@ -316,7 +316,7 @@ input{
         margin-left: 12px !important;
     }
     .hero-section {
-        height: 400px !important;
+        height: 500px !important;
         background-size: cover;  /* Reduce image size on smaller screens */
         background-position: center;  
     }
