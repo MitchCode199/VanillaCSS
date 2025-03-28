@@ -76,6 +76,12 @@ h5{
     font-size: 1rem;
     color: rgb(21, 21, 21); 
 }
+h3{
+    font-size: clamp(10px, 5vw, 25px);
+}
+p, span{
+    font-size: clamp(5px, 4vw, 15px);
+}
 
 .detail-box-info{
     max-width: clamp(800px, 60%, 400px);
@@ -339,11 +345,13 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .foot-items{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem;
     gap: 1rem;
 }
 .foot-branch{
@@ -352,16 +360,13 @@ input{
     align-items: center;
     text-align: center;
     gap: 1rem;
-    max-width: 350px;
-    margin-bottom: 15px;
+    max-width: 300px;
 }
+
 .icons{
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-.foot-copyright{
-    margin: 2rem;
 }
 
 @media screen and (max-width:425px) {
@@ -391,7 +396,11 @@ input{
     .item4, .item5, .item6{
         display: none;
     }
-   
+    .foot-section{
+        padding: 1rem;
+        background-color: rgb(44, 44, 44);
+        color: white;
+    }
    
     /*.btn-box{
         display: inline-block;
@@ -443,6 +452,7 @@ input{
             display: none;
         }
     }
+    
 }
 @media (min-width: 769px) {
     .hamburger,
