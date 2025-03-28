@@ -219,7 +219,7 @@ p, span{
     justify-items: center;
     padding: 10px;
     gap: 1rem;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 250px);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
     'item1 item2 item3'
@@ -229,8 +229,7 @@ p, span{
 }
 
 .menu-container{
-    
-    width: auto;
+    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
