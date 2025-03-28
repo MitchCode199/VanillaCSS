@@ -118,6 +118,7 @@ p, span{
 }
 
 .offer-section{
+    margin-top: 4rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -126,6 +127,7 @@ p, span{
 }
 
 .offer-section-container{
+    margin-top: 4rem;
     width: 100%;
     display: flex;
     gap:20px;
@@ -185,21 +187,29 @@ p, span{
     box-shadow: inset 1px 5px 10px rgba(0, 0, 0, 0.419);
 }
 
-.menu-section{
+.menu-container{
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.menu-items-select{
-    border: 3px solid black;
+.menu-filter{
+    max-width: 60%;
+    display: grid;
+    justify-items: center;
+    padding: 3rem;
+    gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    'item1 item2 item3'
+    'item4 item5 item6'
+    'item7 item8 item9'
+    ;
 }
-.menu{
-    display: flex;
-    list-style: none;
-    gap: 50px;
-}
+
 
 .food{
     display: flex;
@@ -224,27 +234,6 @@ p, span{
     align-items: center;
     margin: 10px;
 }
-
-.menu-filter{
-    display: grid;
-    justify-items: center;
-    padding: 3rem;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-    'item1 item2 item3'
-    'item4 item5 item6'
-    'item7 item8 item9'
-    ;
-}
-
-.menu-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .item1{
     grid-area: item1;
