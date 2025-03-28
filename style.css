@@ -108,7 +108,6 @@ h5{
 }
 
 .offer-section{
-    border: 3px solid green;
     display: flex;
     flex-wrap: wrap;
     gap:20px;
@@ -116,7 +115,7 @@ h5{
     padding: 20px 0px;
 }
 
-.offer-section-left{ border: 3px solid red;
+.offer-section-left{
     display: flex;
     max-width: 615px;
     flex-grow: 1;
@@ -170,7 +169,6 @@ h5{
 }
 
 .menu-section{
-    border: 4px dashed blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -211,7 +209,6 @@ h5{
 }
 
 .menu-filter{
-    border: 4px solid orange;
     display: grid;
     justify-items: center;
     padding: 10px;
@@ -227,7 +224,6 @@ h5{
 
 .menu-container{
     width: auto;
-    border: 5px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,25 +339,29 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px dashed red;
 }
 .foot-items{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
-    border: 2px dotted yellow;
 }
 .foot-branch{
-    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 1rem;
     max-width: 350px;
     margin-bottom: 15px;
 }
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 .foot-copyright{
     margin: 2rem;
-    border: 2px solid green;
 }
 
 @media screen and (max-width:425px) {
@@ -449,4 +449,9 @@ input{
     .dropdown {
         display: none;
     }
+}
+
+svg{
+    background-color: white;
+    border-radius: 50%;
 }
