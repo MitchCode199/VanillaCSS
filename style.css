@@ -118,7 +118,6 @@ p, span{
 }
 
 .offer-section{
-    border: 2px solid green;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -127,7 +126,6 @@ p, span{
 }
 
 .offer-section-container{
-    border: 3px dashed blue;
     width: 100%;
     display: flex;
     gap:20px;
@@ -137,7 +135,6 @@ p, span{
 }
 
 .offer-section-box{
-    border: 3px dotted red;
     max-width: 550px;
     display: flex;
     justify-content: center;
@@ -150,8 +147,8 @@ p, span{
 }
 
 .offer-img{
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid orange;
@@ -427,7 +424,6 @@ input{
         border: 5px solid orange;
     }*/
     .offer-section-box{
-        border: 3px dotted red;
         max-width: 500px;
         flex-direction: column;
     } 
@@ -454,41 +450,7 @@ input{
         display: flex;
         flex-direction: column;
     }
-   /* .offer-section{
-        border: 2px solid green;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .offer-section-box{
-        border: 3px dotted red;
-        max-width: 500px;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        background-color: rgb(44, 44, 44);
-        color: white;
-        border-radius: 4px;
-        gap: 2rem;
-    }
-
-    /*.offer-section-container{
-        gap: 0px;
-    }
-    .offer-section-box {
-        max-width: 350px;
-        flex-direction: column;
-        margin: 10px;
-        padding: 1.5rem;
-    }
-    .offer-section-box {
-        max-width: 350px;
-        flex-direction: column;
-        margin: 10px;
-        padding: 1.5rem;
-    }*/ 
+   
     .menu-filter{
         max-width: 500px;
         display: grid;
@@ -515,6 +477,18 @@ input{
     }
     
 }
+
+@media (min-width: 456px){
+    .offer-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid orange;
+}
+    }
+}
+
 @media (min-width: 769px) {
     .hamburger,
     .dropdown {
