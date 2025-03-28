@@ -65,18 +65,22 @@
 }
 
 h1{
+    font-family: "Arvo", serif;
     margin-bottom: 1rem;
     font-size: clamp(45px, 5vw, 90px);
 }
 h2{
+    font-family: "Arvo", serif;
     font-size: 2rem;
 }
 h5{
+    font-family: "Arvo", serif;
     margin-bottom: 5px;
     font-size: 1rem;
     color: rgb(21, 21, 21); 
 }
 h3{
+    font-family: "Arvo", serif;
     font-size: clamp(10px, 5vw, 25px);
 }
 p, span{
