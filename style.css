@@ -196,7 +196,6 @@ p, span{
 }
 
 .menu-filter{
-    max-width: 60%;
     display: grid;
     justify-items: space-evenly;
     padding: 3rem;
@@ -211,7 +210,7 @@ p, span{
 }
 
 
-.food{
+.food{min-width: 200px;
     max-width: 250px;
     display: flex;
     flex-direction: column;
