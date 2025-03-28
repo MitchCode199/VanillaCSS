@@ -198,7 +198,7 @@ p, span{
 .menu-filter{
     max-width: 60%;
     display: grid;
-    justify-items: center;
+    justify-items: space-evenly;
     padding: 3rem;
     gap: 1rem;
     grid-template-columns: repeat(3, auto);
@@ -405,13 +405,7 @@ input{
     .about-container{
         padding: 4rem 1.5rem !important;
     }
-    /*.offer-img{
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 5px solid orange;
-    }*/
+    
     .offer-section-box{
         max-width: 500px;
         flex-direction: column;
@@ -474,8 +468,7 @@ input{
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid orange;
-}
-    
+}   
 }
 
 @media (min-width: 769px) {
