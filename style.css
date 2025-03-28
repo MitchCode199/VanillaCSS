@@ -209,6 +209,15 @@ p, span{
     ;
 }
 
+.menu-button{
+    display: none;
+    margin-top: 2rem;
+    padding: 0.5rem 4rem;
+    border-radius: 5px;
+    border: 1px solid rgba(121, 121, 121, 0.319);
+    color: rgba(0, 0, 0, 0.664);
+    cursor: pointer;
+}
 
 .food{min-width: 200px;
     max-width: 250px;
@@ -457,6 +466,9 @@ input{
     }
     .about-container{
         padding: 7rem 1rem;
+    }
+    .menu-button{
+        display: block;
     }
     
 }
