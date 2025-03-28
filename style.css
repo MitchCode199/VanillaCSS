@@ -229,6 +229,7 @@ p, span{
 }
 
 .menu-container{
+    
     width: auto;
     display: flex;
     align-items: center;
@@ -266,20 +267,20 @@ p, span{
 
 .about-section img{
     width: 400px;
-    height: 600px;
+    height: 500px;
 }
 
 
 .about-section{
+    max-width: 100vw;
     background-color: rgb(44, 44, 44);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .about-container{
+    padding: 20px;
     color: white;
-    margin: 3rem;
-    padding: 1rem;
     display: flex;
     align-items: center;
     gap: 5rem;
@@ -291,7 +292,7 @@ p, span{
     margin-bottom: 1rem;
 }
 .about-text{
-    font-size: small;
+    font-size: clamp(small, 3vw, large);
     margin-bottom: 1.5rem;
     color: whitesmoke;
 }
@@ -402,18 +403,20 @@ input{
         color: white;
     }
    
-    /*.btn-box{
-        display: inline-block;
-        background-color: orange;
-        padding: 5px 10px;
-        border-radius: 20px;
-    }*/
+    .about-container{
+        padding: 4rem 1.5rem !important;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
+    .about-section img{
+        display: none;
+    }
+
     .hero-section {
         height: 600px;
-        background-size: cover;  /* Reduce image size on smaller screens */
+        background-size: cover;  
         background-position: center;    
     }
     .detail-box-main {
@@ -451,6 +454,9 @@ input{
         .navbar {
             display: none;
         }
+    }
+    .about-container{
+        padding: 7rem 1rem;
     }
     
 }
