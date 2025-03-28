@@ -307,18 +307,20 @@ p, span{
 }
 
 .end-section{
+    border: 3px dashed green;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 90px 0px;
 }
 .end-container{
+    width: 430px;
     padding: 2rem;
-    max-width: fit-content;
     border: 1px solid rgba(214, 214, 214, 0.737);
     border-radius: 10px;
 }
 input{
+    width: 100%;
     border-radius: 3px;
     border: 1px solid rgba(121, 121, 121, 0.319);
 }
@@ -464,6 +466,15 @@ input{
     .hamburger,
     .dropdown {
         display: none;
+    }
+    .end-container{
+        width: 400px;
+    padding: 2rem;
+    border: 1px solid rgba(214, 214, 214, 0.737);
+    border-radius: 10px;
+    }
+    input{
+        width: 100%;
     }
 }
 
