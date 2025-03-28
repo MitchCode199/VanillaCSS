@@ -188,7 +188,7 @@ p, span{
 }
 
 .menu-container{
-    margin-top: 4rem;
+    margin: 4rem 0rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -212,6 +212,7 @@ p, span{
 
 
 .food{
+    max-width: 250px;
     display: flex;
     flex-direction: column;
     background-color: rgb(250, 250, 250);
