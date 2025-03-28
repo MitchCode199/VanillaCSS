@@ -214,8 +214,10 @@ p, span{
     margin-top: 2rem;
     padding: 0.5rem 4rem;
     border-radius: 5px;
+    background-color: orange;
     border: 1px solid rgba(121, 121, 121, 0.319);
-    color: rgba(0, 0, 0, 0.664);
+    font-weight: 500;
+    color: white;
     cursor: pointer;
 }
 
