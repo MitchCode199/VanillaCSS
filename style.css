@@ -307,7 +307,6 @@ p, span{
 }
 
 .end-section{
-    border: 3px dashed green;
     display: flex;
     justify-content: center;
     align-items: center;
